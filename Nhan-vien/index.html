@@ -11,9 +11,12 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#" id="home">Trang chủ</a></li>
-                <li><a href="#" id="personal-info">Thông tin cá nhân</a></li>
-                <li><a href="#" id="declare-taxes">Khai báo thuế</a></li>
-                <li><a href="#" id="pay-taxes">Nộp thuế</a></li>
+                <li><a href="#" id="personal-info">Xem thông tin cá nhân</a></li>
+                <li><a href="#" id="try-tax">Tính thử thuế</a></li>
+                <li><a href="#" id="view-salary">Xem lương</a></li>
+                <li><a href="#" id="monthly-tax">Xem thuế tính 1 tháng</a></li>
+                <li><a href="#" id="annual-tax">Xem thuế quyết toán 1 năm</a></li>
+                <li><a href="#" id="logout">Đăng xuất</a></li>
             </ul>
         </nav>
         <main class="main-content">
@@ -26,11 +29,11 @@
                     </div>
                     <div class="card">
                         <h3>Thuế đã nộp</h3>
-                        <p>410,000 VND</p>
+                        <p>410,000 VND</h3>
                     </div>
                     <div class="card">
                         <h3>Số người phụ thuộc</h3>
-                        <p>1</p>
+                        <p>1</h3>
                     </div>
                 </div>
             </section>
@@ -49,31 +52,49 @@
                 </form>
                 <div id="personal-info-result"></div>
             </section>
-            <section id="declare-taxes-section" class="section">
-                <h2>Khai báo thuế</h2>
-                <form id="declare-taxes-form">
-                    <label for="tax-id-declare">Mã số thuế:</label>
-                    <input type="text" id="tax-id-declare" name="tax-id-declare" required><br>
-                    <label for="income-declare">Thu nhập khai báo:</label>
-                    <input type="number" id="income-declare" name="income-declare" required><br>
-                    <label for="personal-deduction">Giảm trừ cá nhân:</label>
-                    <input type="number" id="personal-deduction" name="personal-deduction" required><br>
-                    <label for="dependent-deduction">Giảm trừ người phụ thuộc:</label>
-                    <input type="number" id="dependent-deduction" name="dependent-deduction" required><br>
-                    <button type="submit">Khai báo</button>
+            <section id="try-tax-section" class="section">
+                <h2>Tính thử thuế</h2>
+                <form id="try-tax-form">
+                    <label for="income-try">Thu nhập:</label>
+                    <input type="number" id="income-try" name="income-try" required><br>
+                    <label for="personal-deduction-try">Giảm trừ cá nhân:</label>
+                    <input type="number" id="personal-deduction-try" name="personal-deduction-try" required><br>
+                    <label for="dependent-deduction-try">Giảm trừ người phụ thuộc:</label>
+                    <input type="number" id="dependent-deduction-try" name="dependent-deduction-try" required><br>
+                    <button type="submit">Tính thuế</button>
                 </form>
-                <div id="declare-result"></div>
+                <div id="try-tax-result"></div>
             </section>
-            <section id="pay-taxes-section" class="section">
-                <h2>Nộp thuế</h2>
-                <form id="pay-taxes-form">
-                    <label for="tax-id-pay">Mã số thuế:</label>
-                    <input type="text" id="tax-id-pay" name="tax-id-pay" required><br>
-                    <label for="amount-pay">Số tiền nộp thuế:</label>
-                    <input type="number" id="amount-pay" name="amount-pay" required><br>
-                    <button type="submit">Nộp thuế</button>
+            <section id="view-salary-section" class="section">
+                <h2>Xem lương</h2>
+                <form id="view-salary-form">
+                    <label for="employee-id-salary">Mã nhân viên:</label>
+                    <input type="text" id="employee-id-salary" name="employee-id-salary" required><br>
+                    <button type="submit">Xem lương</button>
                 </form>
-                <div id="pay-result"></div>
+                <div id="salary-result"></div>
+            </section>
+            <section id="monthly-tax-section" class="section">
+                <h2>Xem thuế tính 1 tháng</h2>
+                <form id="monthly-tax-form">
+                    <label for="employee-id-monthly">Mã nhân viên:</label>
+                    <input type="text" id="employee-id-monthly" name="employee-id-monthly" required><br>
+                    <label for="month">Tháng:</label>
+                    <input type="month" id="month" name="month" required><br>
+                    <button type="submit">Xem thuế</button>
+                </form>
+                <div id="monthly-tax-result"></div>
+            </section>
+            <section id="annual-tax-section" class="section">
+                <h2>Xem thuế quyết toán 1 năm</h2>
+                <form id="annual-tax-form">
+                    <label for="employee-id-annual">Mã nhân viên:</label>
+                    <input type="text" id="employee-id-annual" name="employee-id-annual" required><br>
+                    <label for="year">Năm:</label>
+                    <input type="number" id="year" name="year" required><br>
+                    <button type="submit">Xem thuế</button>
+                </form>
+                <div id="annual-tax-result"></div>
             </section>
         </main>
     </div>

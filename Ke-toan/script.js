@@ -102,6 +102,15 @@ document.addEventListener('DOMContentLoaded', function() {
         this.reset();
     });
 
+    // Xử lý chức năng đăng xuất
+    const logoutLink = document.getElementById('logout');
+    logoutLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Bạn đã đăng xuất!');
+        // Logic xử lý đăng xuất, ví dụ: chuyển hướng tới trang đăng nhập
+        window.location.href = '../Dang-nhap/index.html'; // Giả sử có một trang đăng nhập tên là login.html
+    });
+
     // Cập nhật trang tổng quan tài chính
     function updateDashboard() {
         document.querySelector('.card:nth-child(1) p').textContent = totalTaxPayers;

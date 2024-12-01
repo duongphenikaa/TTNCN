@@ -96,7 +96,7 @@ form label {
 }
 
 form input {
-    width: 97%;
+    width: calc(100% - 1rem);
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
@@ -135,7 +135,7 @@ form button:hover {
     color: #fff;
 }
 
-#result, #report-result, #approval-result, #department-result {
+#result, #try-tax-result, #salary-result, #monthly-tax-result, #annual-tax-result, #employees-list {
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;

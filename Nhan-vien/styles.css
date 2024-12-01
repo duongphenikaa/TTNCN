@@ -45,11 +45,6 @@ body {
     display: block;
 }
 
-.overview {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
 .cards {
     display: flex;
     justify-content: space-around;
@@ -96,12 +91,12 @@ form label {
 }
 
 form input {
-    width: 97%;
-    padding: 0.7rem;
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1.1rem;
+    font-size: 01rem;
 }
 
 form button {
@@ -119,23 +114,7 @@ form button:hover {
     background-color: #45A049;
 }
 
-.tax-list table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-.tax-list th, .tax-list td {
-    padding: 1rem;
-    border: 1px solid #ddd;
-}
-
-.tax-list th {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
-#result, #personal-info-result, #declare-result, #pay-result {
+#result, #try-tax-result, #salary-result, #monthly-tax-result, #annual-tax-result, #personal-info-result {
     background-color: #fff;
     padding: 1rem;
     border-radius: 8px;
